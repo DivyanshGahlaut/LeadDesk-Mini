@@ -12,9 +12,21 @@
 [![JWT Auth](https://img.shields.io/badge/JWT-Protected-black?style=for-the-badge&logo=json-web-tokens)](https://jwt.io/)
 
 **Candidate**: Divyansh Gahlaut  
-**Repository**: [https://github.com/DivyanshGahlaut/LeadDesk-Mini](https://github.com/DivyanshGahlaut/LeadDesk-Mini)
+**Repository**: [https://github.com/DivyanshGahlaut/LeadDesk-Mini](https://github.com/DivyanshGahlaut/LeadDesk-Mini)  
+**Live Backend (Render)**: [https://leaddesk-mini-s9i4.onrender.com](https://leaddesk-mini-s9i4.onrender.com)  
 
 </div>
+
+---
+
+## 🌐 Live Deployment Links
+
+| Component | Platform | URL | Status |
+| :--- | :--- | :--- | :--- |
+| **Backend API** | Render | [`https://leaddesk-mini-s9i4.onrender.com`](https://leaddesk-mini-s9i4.onrender.com) | ![Live](https://img.shields.io/badge/Status-Live-success?style=flat-square) |
+| **API Docs (Swagger)** | Render | [`https://leaddesk-mini-s9i4.onrender.com/docs`](https://leaddesk-mini-s9i4.onrender.com/docs) | ![Live](https://img.shields.io/badge/Status-Live-success?style=flat-square) |
+| **Health Check** | Render | [`https://leaddesk-mini-s9i4.onrender.com/api/health`](https://leaddesk-mini-s9i4.onrender.com/api/health) | ![Live](https://img.shields.io/badge/Status-Healthy-brightgreen?style=flat-square) |
+
 
 ---
 
