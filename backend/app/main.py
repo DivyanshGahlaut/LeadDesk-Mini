@@ -57,6 +57,7 @@ app.include_router(leads.router)
 
 
 @app.get("/")
+@app.head("/")
 def root():
     return {
         "status": "online",
@@ -67,5 +68,6 @@ def root():
 
 
 @app.get("/api/health")
+@app.head("/api/health")
 def health_check():
     return {"status": "healthy"}

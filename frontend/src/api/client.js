@@ -1,6 +1,7 @@
 // API Client for LeadDesk Mini
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || '';
+const RENDER_BACKEND_URL = 'https://leaddesk-mini-s9i4.onrender.com';
+const API_BASE_URL = import.meta.env.VITE_API_URL || RENDER_BACKEND_URL;
 
 const getAuthHeaders = () => {
   const token = localStorage.getItem('leaddesk_admin_token');
