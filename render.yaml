@@ -1,0 +1,15 @@
+services:
+  # Backend FastAPI Service
+  - type: web
+    name: leaddesk-mini-backend
+    env: python
+    region: oregon
+    buildCommand: "pip install -r backend/requirements.txt"
+    startCommand: "cd backend && python -m app.main"
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEFAULT_ADMIN_EMAIL
+        value: admin@leaddesk.com
+      - key: DEFAULT_ADMIN_PASSWORD
+        value: admin123

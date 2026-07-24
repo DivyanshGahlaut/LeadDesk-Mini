@@ -1,0 +1,26 @@
+# Node dependencies & build
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Python Virtual Environment & Cache
+backend/venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Database files
+*.db
+leaddesk.db
+
+# Environment & Logs
+.env
+.env.local
+*.log
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
