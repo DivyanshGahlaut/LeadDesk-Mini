@@ -55,12 +55,15 @@
 ## 🛠️ Tech Stack & Architecture
 
 ```mermaid
-graph TD
-    A[Public Visitor / Admin Browser] -->|HTTP / JSON| B[Vite React Frontend]
-    B -->|Client Validation| B
-    B -->|REST APIs + JWT Header| C[FastAPI Python Backend]
-    C -->|Pydantic Schema Validation| C
-    C -->|SQLAlchemy ORM| D[(SQLite Database leaddesk.db)]
+flowchart TD
+    Client["Public Visitor & Admin Browser"]
+    Frontend["React 18 + Vite Frontend"]
+    Backend["FastAPI Python REST API"]
+    Database[("SQLite Database (leaddesk.db)")]
+
+    Client --> Frontend
+    Frontend --> Backend
+    Backend --> Database
 ```
 
 | Layer | Technology | Purpose |
@@ -276,36 +279,9 @@ npm run dev
 
 ---
 
-## 🎬 3-Minute Loom Video Recording Script
-
-### Timestamps & Cue Sheet (Divyansh Gahlaut)
-
-1. **0:00–0:20 — Introduction**:
-   > *"Hi, I'm Divyansh Gahlaut. This is my submission for the Digital Heroes Full Stack Development internship task. I built LeadDesk Mini, a full-stack lead management application using React, FastAPI, SQLite, SQLAlchemy, and JWT authentication. I'll quickly walk you through the features and explain some of my design decisions."*
-
-2. **0:20–0:50 — Public Landing Page**:
-   > *"This is the public landing page where potential clients can learn about the service and submit project inquiries. The interface is responsive and designed with a clean, modern layout."*
-
-3. **0:50–1:20 — Lead Form & Validation**:
-   > *(Invalid email)*: *"Invalid input is handled before submission to improve user experience."*  
-   > *(Valid submission)*: *"This form includes both client-side and server-side validation. After submission, the data is sent to the FastAPI backend and stored in the SQLite database."*
-
-4. **1:20–1:50 — Admin Login**:
-   > *"The admin dashboard is protected using JWT authentication. Only authenticated users can access the lead management area."*
-
-5. **1:50–2:40 — Dashboard (Search, Status Update, Refresh)**:
-   > *"Here administrators can search leads, update their status from New to Contacted or Closed, and manage all inquiries. The changes are persisted in the database."*
-
-6. **2:40–3:00 — Code Structure & Design Decisions**:
-   > *"I separated the frontend and backend for maintainability. FastAPI handles the REST APIs and authentication, while React manages the user interface. SQLite was chosen because it's lightweight and sufficient for this assignment."*  
-   > *"If I had another day, I would add pagination, email notifications after lead submission, and role-based authentication for multiple admin users."*  
-   > *"Thank you for reviewing my submission."*
-
----
-
 ## 🤖 AI Usage Transparency Statement
 
-> AI tools were used during the initial architectural planning, reviewing Pydantic schema patterns, refining documentation, and drafting test cases. All source code implementation, UI component styling, database modeling, JWT authorization logic, end-to-end integration, and testing were executed, verified, and refined personally by Divyansh Gahlaut to ensure strict compliance with project requirements.
+> AI tools were used during initial architectural planning, reviewing Pydantic schema validation patterns, refining documentation, and drafting test cases. All source code implementation, UI component styling, database modeling, JWT authorization logic, end-to-end integration, and testing were executed, verified, and refined personally by Divyansh Gahlaut to ensure strict compliance with project requirements.
 
 ---
 
